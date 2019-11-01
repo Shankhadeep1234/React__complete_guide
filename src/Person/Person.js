@@ -1,4 +1,6 @@
 import React from "react";
+import Radium from "radium"; //from hover effects etc etc
+
 import "./Person.css";
 
 const Person = ({ name, age, children, click, changed }) => {
@@ -15,4 +17,4 @@ const Person = ({ name, age, children, click, changed }) => {
   );
 };
 
-export default Person;
+export default Radium(Person);
